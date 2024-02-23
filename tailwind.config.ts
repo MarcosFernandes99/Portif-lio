@@ -20,6 +20,7 @@ const config: Config = {
       colors: {
         verde: "#C9F31D",
         cinzaMedio: "#6C6C6C",
+        cinzaClaro: "#BCBCBC",
       },
     },
   },
