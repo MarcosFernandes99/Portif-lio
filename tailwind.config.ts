@@ -15,9 +15,11 @@ const config: Config = {
       },
       backgroundColor: {
         cinzaClaro: "#393939",
+        cinzaEscuro: "#131313",
       },
       colors: {
         verde: "#C9F31D",
+        cinzaMedio: "#6C6C6C",
       },
     },
   },
