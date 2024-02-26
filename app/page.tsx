@@ -21,8 +21,8 @@ export default function Home() {
         <button className="mr-8 hover:text-verde duration-500">Contato</button>
       </div>
 
-      <section className="bg-cinzaEscuro min-w-screen min-h-screen flex">
-        <div className="flex flex-col min-h-screen w-[50%] ml-12">
+      <section className="bg-cinzaEscuro min-w-screen min-h-screen flex justify-around">
+        <div className="flex flex-col min-h-screen w-[40%] ml-12">
           <span className="text-cinzaMedio text-2xl mt-48">Olá eu sou,</span>
           <span className="text-verde text-5xl">Marcos Fernandes</span>
           <span className="text-white text-5xl">Desenvolvedor Front End</span>
