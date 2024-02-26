@@ -172,6 +172,110 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="flex bg-cinzaClaro min-w-screen min-h-[35rem] justify-around">
+        <div className="flex flex-col mt-10 w-[40%]">
+          <span className="text-white text-2xl">Habilidades</span>
+          <span className="text-white text-5xl mt-5">
+            Vamos explorar{" "}
+            <span className="text-verde">minhas habilidades</span>
+          </span>
+          <span className="text-justify text-white mt-10">
+            Sou Desenvolvedor Front-End com experiência sólida nas últimas e
+            mais eficientes tecnologias. Ao longo da minha jornada como
+            freelancer, tenho entregue projetos que não apenas atendem às
+            expectativas, mas também as superam. Estou comprometido em oferecer
+            soluções inovadoras e funcionais para o seu projeto.
+          </span>
+          <div className="flex">
+            <button className="bg-verde p-2 mt-10 text-2xl rounded-2xl hover:bg-black hover:text-white font-bold duration-500">
+              Contate-me
+            </button>
+          </div>
+        </div>
+        <div className="flex mt-10 w-[40%] justify-center flex-wrap">
+          <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+            <span>
+              <Image
+                src={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                }
+                alt="React"
+                width={70}
+                height={70}
+              ></Image>
+            </span>
+            <span className="mb-auto text-xl mt-10 text-white">React</span>
+          </div>
+          <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+            <span>
+              <Image
+                src={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                }
+                alt="Typeescript"
+                width={70}
+                height={70}
+              ></Image>
+            </span>
+            <span className="mb-auto text-white text-xl mt-10">Typescript</span>
+          </div>
+          <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+            <span>
+              <Image
+                src={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                }
+                alt="Next.js"
+                width={70}
+                height={70}
+              ></Image>
+            </span>
+            <span className="mb-auto text-white text-xl mt-10">Next.js</span>
+          </div>
+          <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+            <span>
+              <Image
+                src={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                }
+                alt="Tailwind CSS"
+                width={70}
+                height={70}
+              ></Image>
+            </span>
+            <span className="mb-auto text-white text-xl mt-10">
+              Tailwind CSS
+            </span>
+          </div>
+          <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+            <span>
+              <Image
+                src={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                }
+                alt="GitHub"
+                width={70}
+                height={70}
+              ></Image>
+            </span>
+            <span className="mb-auto text-white text-xl mt-10">GitHub</span>
+          </div>
+          <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+            <span>
+              <Image
+                src={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                }
+                alt="Javascript"
+                width={70}
+                height={70}
+              ></Image>
+            </span>
+            <span className="mb-auto text-white text-xl mt-10">Javascript</span>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
