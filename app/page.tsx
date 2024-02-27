@@ -5,6 +5,8 @@ import fotoInicio from "../public/foto-inicio.png";
 import iconTelefone from "../public/telefone.png";
 import iconEmail from "../public/email.png";
 import check from "../public/check.png";
+import estrela from "../public/estrela.png";
+import enviar from "../public/enviar.png";
 
 export default function Home() {
   return (
@@ -100,11 +102,7 @@ export default function Home() {
           <span className="text-cinzaMedio text-2xl ml-12">Serviços</span>
           <div className="flex items-center mt-10">
             <span className="w-9 h-9 ">
-              <Image
-                src={check}
-                alt="Check"
-                className="filter brightness-0 invert duration-500"
-              ></Image>
+              <Image src={check} alt="Check"></Image>
             </span>
             <div className="flex flex-col ml-4">
               <span className="text-white text-3xl">
@@ -118,11 +116,7 @@ export default function Home() {
           </div>
           <div className="flex items-center mt-3">
             <span className="w-9 h-9 ">
-              <Image
-                src={check}
-                alt="Check"
-                className="filter brightness-0 invert duration-500"
-              ></Image>
+              <Image src={check} alt="Check"></Image>
             </span>
             <div className="flex flex-col ml-4">
               <span className="text-white text-3xl">
@@ -136,11 +130,7 @@ export default function Home() {
           </div>
           <div className="flex items-center mt-3">
             <span className="w-9 h-9 ">
-              <Image
-                src={check}
-                alt="Check"
-                className="filter brightness-0 invert duration-500"
-              ></Image>
+              <Image src={check} alt="Check"></Image>
             </span>
             <div className="flex flex-col ml-4">
               <span className="text-white text-3xl">
@@ -154,11 +144,7 @@ export default function Home() {
           </div>
           <div className="flex items-center mt-3">
             <span className="w-9 h-9 ">
-              <Image
-                src={check}
-                alt="Check"
-                className="filter brightness-0 invert duration-500"
-              ></Image>
+              <Image src={check} alt="Check"></Image>
             </span>
             <div className="flex flex-col ml-4">
               <span className="text-white text-3xl">
@@ -334,7 +320,96 @@ export default function Home() {
         </button>
       </section>
 
-      <section className="flex bg-cinzaClaro min-w-screen min-h-[35rem] justify-around"></section>
+      <section className="flex bg-cinzaClaro min-w-screen min-h-[35rem] justify-around">
+        <div className="flex flex-col w-[40%] mt-10">
+          <span className="text-cinzaClaro text-2xl">Contato</span>
+          <span className="text-white text-5xl mt-5">
+            Vamos conversar sobre seus{" "}
+            <span className="text-verde">próximos projetos</span>
+          </span>
+          <span className="text-cinzaClaro mt-10 text-justify">
+            Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
+            inventore veritatis
+          </span>
+          <div className="flex mt-14 items-center text-2xl font-bold text-white">
+            <span>
+              <Image src={estrela} alt="Estrela" className="w-8 h-8"></Image>
+            </span>
+            <span className="ml-4">2+ Anos de Experiência</span>
+          </div>
+          <div className="flex mt-6 items-center text-2xl font-bold text-white">
+            <span>
+              <Image src={estrela} alt="Estrela" className="w-8 h-8"></Image>
+            </span>
+            <span className="ml-4">Profissional Desenvolvedor Front End</span>
+          </div>
+          <div className="flex mt-6 items-center text-2xl font-bold text-white">
+            <span>
+              <Image src={estrela} alt="Estrela" className="w-8 h-8"></Image>
+            </span>
+            <span className="ml-4">Suporte personalizado</span>
+          </div>
+        </div>
+
+        <div className="flex w-[40%] mt-10">
+          <form action="">
+            <div className="flex flex-wrap justify-between">
+              <div className="flex flex-col">
+                {" "}
+                <label htmlFor="" className="text-white text-xl">
+                  Nome <span className="text-verde text-2xl">*</span>
+                </label>
+                <input
+                  type="text"
+                  className="bg-cinzaMedio rounded-xl mt-2 min-h-10 w-64 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
+                />
+              </div>
+              <div className="flex flex-col ml-16">
+                {" "}
+                <label htmlFor="" className="text-white text-xl">
+                  E-mail <span className="text-verde text-2xl">*</span>
+                </label>
+                <input
+                  type="text"
+                  className="bg-cinzaMedio rounded-xl mt-2 min-h-10 w-64 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
+                />
+              </div>
+              <div className="flex flex-col mt-10">
+                {" "}
+                <label htmlFor="" className="text-white text-xl">
+                  Número de Telefone{" "}
+                  <span className="text-verde text-2xl">*</span>
+                </label>
+                <input
+                  type="text"
+                  className="bg-cinzaMedio rounded-xl mt-2 min-h-10 w-64 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
+                />
+              </div>
+              <div className="flex flex-col mt-10 ml-16">
+                {" "}
+                <label htmlFor="" className="text-white text-xl">
+                  Assunto <span className="text-verde text-2xl">*</span>
+                </label>
+                <input
+                  type="text"
+                  className="bg-cinzaMedio rounded-xl mt-2 min-h-10 w-64 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
+                />
+              </div>
+              <div className="flex flex-col mt-10 flex-grow">
+                {" "}
+                <label htmlFor="" className="text-white text-xl">
+                  Mensagem <span className="text-verde text-2xl">*</span>
+                </label>
+                <textarea className="bg-cinzaMedio rounded-xl mt-2 min-h-24 w-full text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde" />
+              </div>
+            </div>
+            <button className="bg-verde flex mt-10 p-2 text-xl rounded-xl items-center font-bold hover:scale-110 duration-500">
+              Enviar mensagem
+              <Image src={enviar} alt="Enviar" className="w-4 h-4 ml-2"></Image>
+            </button>
+          </form>
+        </div>
+      </section>
     </>
   );
 }
