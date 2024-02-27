@@ -252,14 +252,14 @@ export default function Home() {
             <span>
               <Image
                 src={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg"
                 }
-                alt="GitHub"
+                alt="Nodejs"
                 width={70}
                 height={70}
               ></Image>
             </span>
-            <span className="mb-auto text-white text-xl mt-10">GitHub</span>
+            <span className="mb-auto text-white text-xl mt-10">Node.js</span>
           </div>
           <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
             <span>
@@ -274,6 +274,55 @@ export default function Home() {
             </span>
             <span className="mb-auto text-white text-xl mt-10">Javascript</span>
           </div>
+        </div>
+      </section>
+
+      <section className="min-w-screen min-h-screen bg-black flex flex-col items-center">
+        <div className="flex flex-col items-center h-40 mt-16">
+          <span className="text-cinzaMedio text-xl">
+            Trabalhos mais recentes
+          </span>
+          <span className="text-white text-4xl">
+            Explore meus <span className="text-verde">Projetos Populares</span>
+          </span>
+        </div>
+        <div className="flex justify-around min-w-[70%] min-h-80">
+          <div className="min-w-[30%] bg-cinzaMedio rounded-xl"></div>
+          <div className="flex flex-col justify-center">
+            <span className="text-verde text-xl">Landing Page</span>
+            <span className="text-white text-4xl mt-5">
+              {" "}
+              Página de captura de lead
+            </span>
+            <span className="text-cinzaMedio mt-5 text-justify">
+              Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
+              inventore veritatis...
+            </span>
+            <div>
+              <button className="bg-verde p-2 text-xl rounded-xl mt-10 font-bold transition-transform transform hover:scale-110 duration-500">
+                Ver mais...
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-around min-w-[70%] min-h-80 mt-16">
+          <div className="flex flex-col justify-center">
+            <span className="text-verde text-xl">Landing Page</span>
+            <span className="text-white text-4xl mt-5">
+              {" "}
+              Página de captura de lead
+            </span>
+            <span className="text-cinzaMedio mt-5 text-justify">
+              Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
+              inventore veritatis...
+            </span>
+            <div>
+              <button className="bg-verde p-2 text-xl rounded-xl mt-10 font-bold transition-transform transform hover:scale-110 duration-500">
+                Ver mais...
+              </button>
+            </div>
+          </div>
+          <div className="min-w-[30%] bg-cinzaMedio rounded-xl"></div>
         </div>
       </section>
     </>
