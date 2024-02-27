@@ -30,7 +30,7 @@ export default function Home() {
             We denounce with righteous indignation dislike demoralized by the
             charms of pleasure
           </span>
-          <div className="div flex mt-12">
+          <div className="flex mt-12">
             <button className="bg-verde text-2xl p-2 rounded-2xl hover:bg-black hover:text-white font-bold duration-500">
               Contate-Me
             </button>
@@ -287,7 +287,7 @@ export default function Home() {
           </span>
         </div>
         <div className="flex justify-around min-w-[70%] min-h-80">
-          <div className="min-w-[30%] bg-cinzaMedio rounded-xl"></div>
+          <div className="min-w-[30%] bg-cinzaMedio rounded-xl transition-transform transform hover:scale-110 duration-500"></div>
           <div className="flex flex-col justify-center">
             <span className="text-verde text-xl">Landing Page</span>
             <span className="text-white text-4xl mt-5">
@@ -322,9 +322,19 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="min-w-[30%] bg-cinzaMedio rounded-xl"></div>
+          <div className="min-w-[30%] bg-cinzaMedio rounded-xl transition-transform transform hover:scale-110 duration-500"></div>
         </div>
+        <button className="bg-verde p-2 text-2xl rounded-xl font-bold hover:scale-110 duration-500 items-center flex my-8">
+          Ver mais projetos{" "}
+          <Image
+            src={setaDireita}
+            alt="Seta Direita"
+            className="w-4 h-4 ml-3"
+          ></Image>
+        </button>
       </section>
+
+      <section className="flex bg-cinzaClaro min-w-screen min-h-[35rem] justify-around"></section>
     </>
   );
 }
