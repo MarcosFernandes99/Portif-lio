@@ -34,7 +34,7 @@ export default function Home() {
               <Image
                 src={setaDireita}
                 alt="Seta Direita"
-                className="w-4 h-4 ml-3 filter brightness-0 invert duration-500"
+                className="w-4 h-4 ml-3 filter brightness-0 invert"
               ></Image>
             </button>
           </div>

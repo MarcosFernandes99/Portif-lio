@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -39,52 +40,88 @@ const Projects = () => {
         </div>
 
         <div className="flex flex-wrap justify-around min-w-[70rem] h-full my-20">
-          <div className="flex flex-col min-w-[40%] h-96 hover:scale-110 duration-500 mb-24">
-            <div className="bg-cinzaClaro h-full rounded-xl"></div>
+          <div className="flex flex-col min-w-[40%] h-96 mb-24">
+            <div className="bg-cinzaClaro h-full rounded-xl cursor-pointer hover:scale-105 duration-500"></div>
             <div className="flex text-cinzaMedio text-xl justify-around mt-2">
               <span>React</span>
               <span>Typescript</span>
               <span>Tailwind CSS</span>
             </div>
-            <span className="text-white text-3xl flex justify-center mt-5 font-bold">
-              Título do Projeto
-            </span>
+            <div className="flex justify-evenly items-center mt-5">
+              <span className="text-white text-3xl mt-5 font-bold">
+                Título do Projeto
+              </span>
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+                alt="GitHub"
+                width={40}
+                height={40}
+                className="filter brightness-0 invert cursor-pointer hover:scale-110 duration-500"
+              ></Image>
+            </div>
           </div>
 
-          <div className="flex flex-col min-w-[40%] h-96 hover:scale-110 duration-500 mb-24">
-            <div className="bg-cinzaClaro h-full rounded-xl"></div>
+          <div className="flex flex-col min-w-[40%] h-96 mb-24">
+            <div className="bg-cinzaClaro h-full rounded-xl cursor-pointer hover:scale-105 duration-500"></div>
             <div className="flex text-cinzaMedio text-xl justify-around mt-2">
               <span>React</span>
               <span>Typescript</span>
               <span>Tailwind CSS</span>
             </div>
-            <span className="text-white text-3xl flex justify-center mt-5 font-bold">
-              Título do Projeto
-            </span>
+            <div className="flex justify-evenly items-center mt-5">
+              <span className="text-white text-3xl mt-5 font-bold">
+                Título do Projeto
+              </span>
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+                alt="GitHub"
+                width={40}
+                height={40}
+                className="filter brightness-0 invert cursor-pointer hover:scale-110 duration-500"
+              ></Image>
+            </div>
           </div>
 
-          <div className="flex flex-col min-w-[40%] h-96 hover:scale-110 duration-500 mb-24">
-            <div className="bg-cinzaClaro h-full rounded-xl"></div>
+          <div className="flex flex-col min-w-[40%] h-96 mb-24">
+            <div className="bg-cinzaClaro h-full rounded-xl cursor-pointer hover:scale-105 duration-500"></div>
             <div className="flex text-cinzaMedio text-xl justify-around mt-2">
               <span>React</span>
               <span>Typescript</span>
               <span>Tailwind CSS</span>
             </div>
-            <span className="text-white text-3xl flex justify-center mt-5 font-bold">
-              Título do Projeto
-            </span>
+            <div className="flex justify-evenly items-center mt-5">
+              <span className="text-white text-3xl mt-5 font-bold">
+                Título do Projeto
+              </span>
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+                alt="GitHub"
+                width={40}
+                height={40}
+                className="filter brightness-0 invert cursor-pointer hover:scale-110 duration-500"
+              ></Image>
+            </div>
           </div>
 
-          <div className="flex flex-col min-w-[40%] h-96 hover:scale-110 duration-500 mb-24">
-            <div className="bg-cinzaClaro h-full rounded-xl"></div>
+          <div className="flex flex-col min-w-[40%] h-96 mb-24">
+            <div className="bg-cinzaClaro h-full rounded-xl cursor-pointer hover:scale-105 duration-500"></div>
             <div className="flex text-cinzaMedio text-xl justify-around mt-2">
               <span>React</span>
               <span>Typescript</span>
               <span>Tailwind CSS</span>
             </div>
-            <span className="text-white text-3xl flex justify-center mt-5 font-bold">
-              Título do Projeto
-            </span>
+            <div className="flex justify-evenly items-center mt-5">
+              <span className="text-white text-3xl mt-5 font-bold">
+                Título do Projeto
+              </span>
+              <Image
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+                alt="GitHub"
+                width={40}
+                height={40}
+                className="filter brightness-0 invert cursor-pointer hover:scale-110 duration-500"
+              ></Image>
+            </div>
           </div>
         </div>
       </section>
