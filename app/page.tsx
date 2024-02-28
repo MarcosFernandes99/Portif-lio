@@ -59,11 +59,13 @@ export default function Home() {
             <span className="text-verde">Desenvolvedor Front End</span>
           </span>
           <span className="text-white mt-8 text-justify">
-            Sou Desenvolvedor Front-End com experiência sólida nas últimas e
-            mais eficientes tecnologias. Ao longo da minha jornada como
-            freelancer, tenho entregue projetos que não apenas atendem às
-            expectativas, mas também as superam. Estou comprometido em oferecer
-            soluções inovadoras e funcionais para o seu projeto.
+            Desenvolvedor front-end apaixonado por transformar ideias em
+            experiências digitais atrativas. Acredito que cada projeto é uma
+            oportunidade de criar algo único e impactante. Minha jornada no
+            mundo da tecnologia é impulsionada pela busca constante por
+            conhecimento. Estou sempre aberto a novos desafios e colaborações.
+            Seja bem-vindo ao meu espaço virtual, onde a paixão pela criação se
+            encontra com a expertise técnica.
           </span>
           <div className="flex justify-around bg-cinzaClaro min-h-28 rounded-3xl mt-10 ">
             <div className="flex items-center transition-transform transform hover:scale-110 duration-500">
@@ -163,11 +165,11 @@ export default function Home() {
             <span className="text-verde">minhas habilidades</span>
           </span>
           <span className="text-justify text-white mt-10">
-            Sou Desenvolvedor Front-End com experiência sólida nas últimas e
-            mais eficientes tecnologias. Ao longo da minha jornada como
-            freelancer, tenho entregue projetos que não apenas atendem às
-            expectativas, mas também as superam. Estou comprometido em oferecer
-            soluções inovadoras e funcionais para o seu projeto.
+            Profissional com sólida experiência nas últimas tecnologias do
+            mercado. Apaixonado por transformar ideias em realidade digital.
+            Especializado na criação não apenas de sites intuitivos e atrativos,
+            mas também em sistemas personalizados, como menus interativos e
+            eficientes sistemas de agendamento online para o seu negócio.
           </span>
           <div className="flex">
             <button className="bg-verde p-2 mt-10 text-2xl rounded-2xl hover:bg-black hover:text-white font-bold duration-500">
@@ -327,8 +329,10 @@ export default function Home() {
             <span className="text-verde">próximos projetos</span>
           </span>
           <span className="text-cinzaClaro mt-10 text-justify">
-            Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-            inventore veritatis
+            Obrigado por visitar meu portfólio. Para iniciarmos uma conversa
+            sobre como posso contribuir para o seu projeto, por favor, preencha
+            o formulário ao lado. Estou comprometido em responder prontamente.
+            Até logo!
           </span>
           <div className="flex mt-14 items-center text-2xl font-bold text-white">
             <span>
