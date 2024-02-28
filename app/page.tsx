@@ -21,9 +21,12 @@ export default function Home() {
           <span className="text-cinzaMedio text-2xl mt-48">Olá eu sou,</span>
           <span className="text-verde text-5xl">Marcos Fernandes</span>
           <span className="text-white text-5xl">Desenvolvedor Front End</span>
-          <span className="text-cinzaMedio text-lg mt-12">
-            We denounce with righteous indignation dislike demoralized by the
-            charms of pleasure
+          <span className="text-cinzaMedio text-lg mt-12 text-justify">
+            Atuando há mais de 3 anos como Freelancer, venho entregando
+            consistentemente projetos que superam as expectativas dos meus
+            clientes. Minha paixão pelo que faço se reflete em meus projetos,
+            que não apenas seguem as últimas tendências do mercado, mas também
+            capturam a identidade única de cada cliente.
           </span>
           <div className="flex mt-12">
             <button className="bg-verde text-2xl p-2 rounded-2xl hover:bg-black hover:text-white font-bold duration-500">
