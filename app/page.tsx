@@ -7,23 +7,14 @@ import iconEmail from "../public/email.png";
 import check from "../public/check.png";
 import estrela from "../public/estrela.png";
 import enviar from "../public/enviar.png";
-import endereco from "../public/endereco.png";
-import setaCima from "../public/pra-cima.png";
+import Link from "next/link";
+import NavBar from "./components/navbar";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
     <>
-      <div className="flex min-w-screen min-h-20 bg-cinzaClaro text-white justify-center items-center font-extrabold text-2xl font-thin">
-        <button className="mr-8 hover:text-verde duration-500">Início</button>
-        <button className="mr-8 hover:text-verde duration-500">
-          Sobre mim
-        </button>
-        <button className="mr-8 hover:text-verde duration-500">
-          Habilidades
-        </button>
-        <button className="mr-8 hover:text-verde duration-500">Projetos</button>
-        <button className="mr-8 hover:text-verde duration-500">Contato</button>
-      </div>
+      <NavBar></NavBar>
 
       <section className="bg-cinzaEscuro min-w-screen min-h-screen flex justify-around">
         <div className="flex flex-col min-h-screen w-[40%] ml-12">
@@ -312,14 +303,17 @@ export default function Home() {
           </div>
           <div className="min-w-[30%] bg-cinzaMedio rounded-xl transition-transform transform hover:scale-110 duration-500"></div>
         </div>
-        <button className="bg-verde p-2 text-2xl rounded-xl font-bold hover:scale-110 duration-500 items-center flex my-8">
+        <Link
+          href="/projects"
+          className="bg-verde p-2 text-2xl rounded-xl font-bold hover:scale-110 duration-500 items-center flex my-8 cursor-pointer"
+        >
           Ver mais projetos{" "}
           <Image
             src={setaDireita}
             alt="Seta Direita"
             className="w-4 h-4 ml-3"
           ></Image>
-        </button>
+        </Link>
       </section>
 
       <section className="flex bg-cinzaClaro min-w-screen min-h-[35rem] justify-around">
@@ -413,52 +407,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex min-w-screen bg-black min-h-[10rem] justify-around">
-        <div className="flex flex-col items-center w-[40%] justify-center">
-          <span className="text-white font-bold text-2xl">Link rápido</span>
-          <div className="flex justify-around text-cinzaMedio text-xl mt-6">
-            <button className="hover:text-verde">Início</button>
-            <button className="ml-6 hover:text-verde">Sobre mim</button>
-            <button className="ml-6 hover:text-verde">Habilidades</button>
-            <button className="ml-6 hover:text-verde">Projetos</button>
-            <button className="ml-6 hover:text-verde">Contato</button>
-          </div>
-        </div>
-        <div className="flex flex-col w-[40%] justify-center items-center">
-          <span className="text-white text-2xl font-bold">Endereço</span>
-          <div className="flex items-center mt-6">
-            <span className="bg-verde w-7 h-7 rounded-full">
-              <Image src={endereco} alt="Endereço" className="p-1"></Image>
-            </span>
-            <span className="text-cinzaMedio text-xl ml-2">São Paulo - SP</span>
-            <span className="bg-verde w-7 h-7 rounded-full ml-8">
-              <Image src={iconEmail} alt="Email" className="p-1"></Image>
-            </span>
-            <span className="text-cinzaMedio text-xl ml-2">
-              marcosdev@zohomail.com
-            </span>
-            <span className="bg-verde w-7 h-7 rounded-full ml-8">
-              <Image src={iconTelefone} alt="Telefone" className="p-1"></Image>
-            </span>
-            <span className="text-cinzaMedio text-xl ml-2">11 98859-1854</span>
-          </div>
-        </div>
-      </section>
-
-      <section className="flex min-w-screen bg-cinzaClaro min-h-[5rem] justify-around">
-        <div className="text-white text-xl flex min-w-[40%] justify-around">
-          <button className="hover:scale-110 duration-500">Instagram</button>
-          <button className="hover:scale-110 duration-500">Linkedin</button>
-          <button className="hover:scale-110 duration-500">Gmail</button>
-          <button className="hover:scale-110 duration-500">GitHub</button>
-        </div>
-        <div className="flex items-center min-w-[40%] justify-end">
-          <span className="text-xl text-white">Voltar ao topo</span>
-          <button className="ml-4 bg-verde h-9 w-8 rounded-md hover:scale-110 duration-200">
-            <Image src={setaCima} alt="Seta para cima" className="p-2"></Image>
-          </button>
-        </div>
-      </section>
+      <Footer></Footer>
     </>
   );
 }
