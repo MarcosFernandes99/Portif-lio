@@ -8,19 +8,9 @@ import setaCima from "../../public/pra-cima.png";
 export default function Footer() {
   return (
     <>
-      <section className="flex min-w-screen bg-black min-h-[10rem] justify-around">
-        <div className="flex flex-col items-center w-[40%] justify-center">
-          <span className="text-white font-bold text-2xl">Link rápido</span>
-          <div className="flex justify-around text-cinzaMedio text-xl mt-6">
-            <button className="hover:text-verde">Início</button>
-            <button className="ml-6 hover:text-verde">Sobre mim</button>
-            <button className="ml-6 hover:text-verde">Habilidades</button>
-            <button className="ml-6 hover:text-verde">Projetos</button>
-            <button className="ml-6 hover:text-verde">Contato</button>
-          </div>
-        </div>
+      <section className="flex min-w-screen bg-black min-h-[10rem] justify-center">
         <div className="flex flex-col w-[40%] justify-center items-center">
-          <span className="text-white text-2xl font-bold">Endereço</span>
+          <span className="text-white text-3xl font-bold">Endereço</span>
           <div className="flex items-center mt-6">
             <span className="bg-verde w-7 h-7 rounded-full">
               <Image src={endereco} alt="Endereço" className="p-1"></Image>
