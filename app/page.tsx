@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import setaDireita from "../public/seta-direita.png";
@@ -10,6 +12,13 @@ import enviar from "../public/enviar.png";
 import Link from "next/link";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
+
+const scrollToBottom = () => {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: "smooth",
+  });
+};
 
 export default function Home() {
   return (
@@ -29,7 +38,10 @@ export default function Home() {
             capturam a identidade única de cada cliente.
           </span>
           <div className="flex mt-12">
-            <button className="bg-verde text-2xl p-2 rounded-2xl hover:bg-black hover:text-white font-bold duration-500">
+            <button
+              className="bg-verde text-2xl p-2 rounded-2xl hover:bg-black hover:text-white font-bold duration-500"
+              onClick={scrollToBottom}
+            >
               Contate-Me
             </button>
             <button className="text-white ml-16 text-2xl transition-transform transform hover:scale-110 duration-500 font-bold flex items-center">
@@ -180,7 +192,10 @@ export default function Home() {
             eficientes sistemas de agendamento online para o seu negócio.
           </span>
           <div className="flex">
-            <button className="bg-verde p-2 mt-10 text-2xl rounded-2xl hover:bg-black hover:text-white font-bold duration-500">
+            <button
+              className="bg-verde p-2 mt-10 text-2xl rounded-2xl hover:bg-black hover:text-white font-bold duration-500"
+              onClick={scrollToBottom}
+            >
               Contate-me
             </button>
           </div>
