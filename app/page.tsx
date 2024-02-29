@@ -74,9 +74,13 @@ export default function Home() {
               </span>
               <div className="flex flex-col justify-center ml-2">
                 <span className="text-cinzaClaro">E-mail</span>
-                <button className="text-white font-bold ">
+                <a
+                  href="mailto:marcosdev@zohomail.com"
+                  target="_blank"
+                  className="text-white font-bold "
+                >
                   marcosdev@zohomail.com
-                </button>
+                </a>
               </div>
             </div>
             <div className="flex items-center transition-transform transform hover:scale-110 duration-500">
@@ -89,9 +93,13 @@ export default function Home() {
               </span>
               <div className="flex flex-col justify-center ml-2">
                 <span className="text-cinzaClaro">Telefone</span>
-                <button className="text-white font-bold ">
+                <a
+                  href="https://wa.me/5511988591854"
+                  target="_blank"
+                  className="text-white font-bold "
+                >
                   +55 11 98859-1854
-                </button>
+                </a>
               </div>
             </div>
           </div>
