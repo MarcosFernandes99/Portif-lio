@@ -20,6 +20,13 @@ const scrollToBottom = () => {
   });
 };
 
+const downloadCV = () => {
+  const cv =
+    "https://drive.google.com/file/d/1N5x_W6o07pYE6Fj0EnHarRXuGpjvTyUI/view?usp=sharing";
+
+  window.open(cv, "_blank");
+};
+
 export default function Home() {
   return (
     <>
@@ -44,7 +51,10 @@ export default function Home() {
             >
               Contate-Me
             </button>
-            <button className="text-white ml-16 text-2xl transition-transform transform hover:scale-110 duration-500 font-bold flex items-center">
+            <button
+              className="text-white ml-16 text-2xl transition-transform transform hover:scale-110 duration-500 font-bold flex items-center"
+              onClick={downloadCV}
+            >
               Download CV
               <Image
                 src={setaDireita}
