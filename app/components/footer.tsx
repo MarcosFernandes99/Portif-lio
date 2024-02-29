@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import endereco from "../../public/endereco.png";
 import iconEmail from "../../public/email.png";
@@ -5,6 +7,12 @@ import iconTelefone from "../../public/telefone.png";
 import Image from "next/image";
 import setaCima from "../../public/pra-cima.png";
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 export default function Footer() {
   return (
     <>
@@ -31,16 +39,45 @@ export default function Footer() {
       </section>
 
       <section className="flex min-w-screen bg-cinzaClaro min-h-[5rem] justify-around">
-        <div className="text-white text-xl flex min-w-[40%] justify-around">
-          <button className="hover:scale-110 duration-500">Instagram</button>
-          <button className="hover:scale-110 duration-500">Linkedin</button>
-          <button className="hover:scale-110 duration-500">Gmail</button>
-          <button className="hover:scale-110 duration-500">GitHub</button>
+        <div className="text-white text-xl flex min-w-[40%] justify-around items-center">
+          <a
+            href="https://www.instagram.com/dev.marcosjr/?hl=pt"
+            target="_blank"
+            className="hover:scale-110 duration-500"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.linkedin.com/in/marcos-fernandes-8a4711175/"
+            target="_blank"
+            className="hover:scale-110 duration-500"
+          >
+            Linkedin
+          </a>
+          <a
+            href="mailto:marcosdev@zohomail.com"
+            target="_blank"
+            className="hover:scale-110 duration-500"
+          >
+            E-mail
+          </a>
+          <a
+            href="https://github.com/MarcosFernandes99"
+            target="_blank"
+            className="hover:scale-110 duration-500"
+          >
+            GitHub
+          </a>
         </div>
         <div className="flex items-center min-w-[40%] justify-end">
           <span className="text-xl text-white">Voltar ao topo</span>
           <button className="ml-4 bg-verde h-9 w-8 rounded-md hover:scale-110 duration-200">
-            <Image src={setaCima} alt="Seta para cima" className="p-2"></Image>
+            <Image
+              src={setaCima}
+              alt="Seta para cima"
+              className="p-2"
+              onClick={scrollToTop}
+            ></Image>
           </button>
         </div>
       </section>
