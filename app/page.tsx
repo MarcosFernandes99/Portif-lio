@@ -67,7 +67,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="rounded-full bg-black mt-10 w-[40%] h-[80vh]">
+        <div className="rounded-full bg-black mt-10 w-[40%] h-[80vh] mt-24">
           <Image
             src={fotoInicio}
             alt="Foto Inicio"

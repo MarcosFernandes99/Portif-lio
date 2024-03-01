@@ -14,7 +14,7 @@ const scrollToSection = (sectionId: string) => {
 
 export default function NavBar() {
   return (
-    <div className="flex min-w-screen min-h-20 bg-cinzaClaro text-white justify-center items-center font-extrabold text-2xl font-thin">
+    <div className="flex min-w-full min-h-20 bg-cinzaClaro text-white justify-center items-center font-extrabold text-2xl font-thin fixed z-50">
       <button
         className="mr-8 hover:text-verde duration-500"
         onClick={() => scrollToSection("inicio")}
