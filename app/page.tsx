@@ -32,7 +32,10 @@ export default function Home() {
     <>
       <NavBar></NavBar>
 
-      <section className="bg-cinzaEscuro min-w-screen min-h-screen flex justify-around">
+      <section
+        className="bg-cinzaEscuro min-w-screen min-h-screen flex justify-around"
+        id="inicio"
+      >
         <div className="flex flex-col min-h-screen w-[40%] ml-12">
           <span className="text-cinzaMedio text-2xl mt-48">Olá eu sou,</span>
           <span className="text-verde text-5xl">Marcos Fernandes</span>
@@ -73,7 +76,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex bg-black min-w-screen min-h-[35rem] justify-around">
+      <section
+        className="flex bg-black min-w-screen min-h-[35rem] justify-around"
+        id="sobre"
+      >
         <div className="flex flex-col w-[40%] mt-10">
           <span className="text-cinzaMedio text-2xl">Sobre mim</span>
           <span className="text-white text-5xl mt-4">
@@ -187,7 +193,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex bg-cinzaClaro min-w-screen min-h-[35rem] justify-around">
+      <section
+        className="flex bg-cinzaClaro min-w-screen min-h-[35rem] justify-around"
+        id="habilidades"
+      >
         <div className="flex flex-col mt-10 w-[40%]">
           <span className="text-white text-2xl">Habilidades</span>
           <span className="text-white text-5xl mt-5">
@@ -294,7 +303,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="min-w-screen min-h-screen bg-black flex flex-col items-center">
+      <section
+        className="min-w-screen min-h-screen bg-black flex flex-col items-center"
+        id="projetos"
+      >
         <div className="flex flex-col items-center h-40 mt-16">
           <span className="text-cinzaMedio text-xl">
             Trabalhos mais recentes
@@ -354,7 +366,10 @@ export default function Home() {
         </Link>
       </section>
 
-      <section className="flex bg-cinzaClaro min-w-screen min-h-[35rem] justify-around">
+      <section
+        className="flex bg-cinzaClaro min-w-screen min-h-[35rem] justify-around"
+        id="contato"
+      >
         <div className="flex flex-col w-[40%] mt-10">
           <span className="text-cinzaClaro text-2xl">Contato</span>
           <span className="text-white text-5xl mt-5">
