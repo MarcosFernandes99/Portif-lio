@@ -12,6 +12,8 @@ import enviar from "../public/enviar.png";
 import Link from "next/link";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
+import wheatherApp from "../public/wheather_app.png";
+import todoApp from "../public/todo_app.png";
 
 const scrollToBottom = () => {
   window.scrollTo({
@@ -315,47 +317,69 @@ export default function Home() {
             Explore meus <span className="text-verde">Projetos Populares</span>
           </span>
         </div>
-        <div className="flex justify-around min-w-[70%] min-h-80">
-          <div className="min-w-[30%] bg-cinzaMedio rounded-xl transition-transform transform hover:scale-110 duration-500"></div>
-          <div className="flex flex-col justify-center">
-            <span className="text-verde text-xl">Landing Page</span>
+        <div className="flex justify-around w-[70%] min-h-80">
+          <div className="w-[35%] transition-transform transform hover:scale-110 duration-500">
+            <Image
+              src={wheatherApp}
+              alt="Wheather App"
+              className="object-cover rounded-xl"
+            ></Image>
+          </div>
+          <div className="flex flex-col justify-center w-[35%]">
+            <span className="text-verde text-xl">Wheather App</span>
             <span className="text-white text-4xl mt-5">
-              {" "}
-              Página de captura de lead
+              Aplicativo de previsão de tempo
             </span>
             <span className="text-cinzaMedio mt-5 text-justify">
-              Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-              inventore veritatis...
+              É um projeto desenvolvido para mobile, onde o usuário tem a opção
+              de pesquisar a temperatura da sua respectiva cidade ou qualquer
+              outra que seja.
             </span>
-            <div>
-              <button className="bg-verde p-2 text-xl rounded-xl mt-10 font-bold transition-transform transform hover:scale-110 duration-500">
+            <div className="mt-10 hover:scale-105 duration-500">
+              <a
+                className="bg-verde p-2 text-xl rounded-xl font-bold"
+                href="https://github.com/MarcosFernandes99/weather-app"
+                target="_blank"
+              >
                 Ver mais...
-              </button>
+              </a>
             </div>
           </div>
         </div>
-        <div className="flex justify-around min-w-[70%] min-h-80 mt-16">
-          <div className="flex flex-col justify-center">
-            <span className="text-verde text-xl">Landing Page</span>
+        <div className="flex justify-around w-[70%] min-h-80 mt-16">
+          <div className="flex flex-col justify-center w-[35%]">
+            <span className="text-verde text-xl">Todo APP</span>
             <span className="text-white text-4xl mt-5">
               {" "}
-              Página de captura de lead
+              Aplicativo de agendamento de tarefas
             </span>
             <span className="text-cinzaMedio mt-5 text-justify">
-              Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-              inventore veritatis...
+              É um projeto onde o usuário tem a opção de inserir suas tarefas,
+              marcá-las como concluída ou se preferir exclui-las, como também
+              tem a opção de limpar a lista, onde todas as tarefas são
+              deletadas.
             </span>
-            <div>
-              <button className="bg-verde p-2 text-xl rounded-xl mt-10 font-bold transition-transform transform hover:scale-110 duration-500">
+            <div className="mt-10 transition-transform transform hover:scale-105 duration-500">
+              <a
+                href="https://github.com/MarcosFernandes99/todo-app?tab=readme-ov-file"
+                target="_blank"
+                className="bg-verde p-2 text-xl rounded-xl font-bold cursor-pointer"
+              >
                 Ver mais...
-              </button>
+              </a>
             </div>
           </div>
-          <div className="min-w-[30%] bg-cinzaMedio rounded-xl transition-transform transform hover:scale-110 duration-500"></div>
+          <div className="w-[35%] transition-transform transform hover:scale-110 duration-500">
+            <Image
+              src={todoApp}
+              alt="Todo App"
+              className="rounded-xl object-cover"
+            ></Image>
+          </div>
         </div>
         <Link
           href="/projects"
-          className="bg-verde p-2 text-2xl rounded-xl font-bold hover:scale-110 duration-500 items-center flex my-8 cursor-pointer"
+          className="bg-verde p-2 text-2xl rounded-xl font-bold hover:scale-110 duration-500 items-center flex my-16 cursor-pointer"
         >
           Ver mais projetos{" "}
           <Image
