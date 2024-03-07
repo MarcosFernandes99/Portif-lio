@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import setaDireita from "../public/seta-direita.png";
 import fotoInicio from "../public/foto-inicio.png";
@@ -14,6 +14,7 @@ import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 import wheatherApp from "../public/wheather_app.png";
 import todoApp from "../public/todo_app.png";
+import Swal from "sweetalert2";
 
 const scrollToBottom = () => {
   window.scrollTo({
@@ -30,6 +31,68 @@ const downloadCV = () => {
 };
 
 export default function Home() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    sendMessage();
+  };
+
+  const sendMessage = async () => {
+    if (!name || !email || !phone || !subject || !message) {
+      // Verificar se todos os campos estão preenchidos antes de continuar
+      Swal.fire(
+        "Por favor, preencha todos os campos do formulário!",
+        "",
+        "error"
+      );
+      return;
+    }
+    const data = {
+      name,
+      email,
+      phone,
+      subject,
+      message,
+    };
+
+    try {
+      const response = await fetch(
+        "https://api.sheetmonkey.io/form/nVYcKZPoMNrYW8F9DtCWTd",
+        {
+          method: "post",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+
+      if (response.ok) {
+        Swal.fire("Mensagem enviada com sucesso!", "", "success");
+        // Limpar os campos após o envio bem-sucedido
+        setName("");
+        setEmail("");
+        setPhone("");
+        setSubject("");
+        setMessage("");
+      } else {
+        throw new Error("Erro ao enviar mensagem");
+      }
+    } catch (error) {
+      Swal.fire(
+        "Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.",
+        "",
+        "error"
+      );
+    }
+  };
+
   return (
     <>
       <NavBar></NavBar>
@@ -436,6 +499,8 @@ export default function Home() {
                 </label>
                 <input
                   type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="bg-cinzaMedio rounded-xl mt-2 min-h-10 w-64 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
                 />
               </div>
@@ -446,6 +511,8 @@ export default function Home() {
                 </label>
                 <input
                   type="text"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="bg-cinzaMedio rounded-xl mt-2 min-h-10 w-64 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
                 />
               </div>
@@ -457,6 +524,8 @@ export default function Home() {
                 </label>
                 <input
                   type="text"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                   className="bg-cinzaMedio rounded-xl mt-2 min-h-10 w-64 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
                 />
               </div>
@@ -467,6 +536,8 @@ export default function Home() {
                 </label>
                 <input
                   type="text"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
                   className="bg-cinzaMedio rounded-xl mt-2 min-h-10 w-64 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
                 />
               </div>
@@ -475,10 +546,17 @@ export default function Home() {
                 <label htmlFor="" className="text-white text-xl">
                   Mensagem <span className="text-verde text-2xl">*</span>
                 </label>
-                <textarea className="bg-cinzaMedio rounded-xl mt-2 min-h-24 w-full text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde" />
+                <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  className="bg-cinzaMedio rounded-xl mt-2 min-h-24 w-full text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
+                />
               </div>
             </div>
-            <button className="bg-verde flex mt-10 p-2 text-xl rounded-xl items-center font-bold hover:scale-110 duration-500">
+            <button
+              onClick={handleButtonClick}
+              className="bg-verde flex mt-10 p-2 text-xl rounded-xl items-center font-bold hover:scale-110 duration-500"
+            >
               Enviar mensagem
               <Image src={enviar} alt="Enviar" className="w-4 h-4 ml-2"></Image>
             </button>
