@@ -10,11 +10,12 @@ import check from "../public/check.png";
 import estrela from "../public/estrela.png";
 import enviar from "../public/enviar.png";
 import Link from "next/link";
-import NavBar from "./components/navbar";
-import Footer from "./components/footer";
+import NavBar from "../app/components/navbar";
+import Footer from "../app/components/footer";
 import wheatherApp from "../public/wheather_app.png";
 import todoApp from "../public/todo_app.png";
 import Swal from "sweetalert2";
+import "../app/globals.css";
 
 const scrollToBottom = () => {
   window.scrollTo({

@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "../components/navbar";
-import Footer from "../components/footer";
+import NavBar from "../app/components/navbar";
+import Footer from "../app/components/footer";
 import Image from "next/image";
 
 const Projects = () => {
