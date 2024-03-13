@@ -42,7 +42,7 @@ const Projects = () => {
 
       <section className="min-w-screen min-h-screen bg-cinzaEscuro flex flex-col items-center">
         <div className="flex flex-col">
-          <span className="text-white text-5xl mt-16 flex justify-center">
+          <span className="text-white text-5xl mt-24 flex justify-center">
             Portifólio
           </span>
           <span className="text-cinzaClaro text-2xl mt-5">
@@ -50,31 +50,26 @@ const Projects = () => {
           </span>
         </div>
 
-        <div className="w-[70rem] bg-black h-20 rounded-xl flex justify-around mt-5 items-center">
-          <button className="h-[80%] w-32 bg-sky-400 rounded-xl font-bold text-2xl p-2 flex items-center justify-center hover:bg-sky-800 duration-500">
-            React
-          </button>
-          <button className="h-[80%] w-32 bg-slate-200 rounded-xl font-bold text-2xl p-2 flex items-center justify-center hover:bg-slate-400 duration-500">
-            Typescript
-          </button>
-          <button className="h-[80%] w-32 bg-yellow-400 rounded-xl font-bold text-2xl p-2 flex items-center justify-center hover:bg-yellow-800 duration-500">
-            Javascript
-          </button>
-          <button className="h-[80%] w-32 bg-gray-400 rounded-xl font-bold text-2xl p-2 flex items-center justify-center hover:bg-gray-600 duration-500">
-            Next.js
-          </button>
-          <button className="h-[80%] w-32 bg-blue-500 rounded-xl font-bold text-2xl p-2 flex items-center justify-center hover:bg-blue-800 duration-500">
-            Tailwind CSS
-          </button>
-          <button className="h-[80%] w-32 bg-green-400 rounded-xl font-bold text-2xl p-2 flex items-center justify-center hover:bg-green-800 duration-500">
-            Node.js
-          </button>
+        <div className="flex justify-around mt-5 items-center w-[13.3rem] h-[3.3rem] bg-verde rounded-xl">
+          <select
+            name="Tech"
+            id="Tech"
+            className="bg-black w-[13rem] h-[3rem] rounded-xl p-1 text-white text-xl"
+          >
+            <option value="Nextjs">Next.js</option>
+            <option value="Typescript">Typescript</option>
+            <option value="Javascript">Javascript</option>
+            <option value="CSS">CSS</option>
+            <option value="Tailwind CSS">Tailwind CSS</option>
+            <option value="REST Api">REST Api</option>
+            <option value="SASS">SASS</option>
+          </select>
         </div>
 
-        <div className="flex justify-evenly my-20 w-screen">
+        <div className="flex flex-wrap justify-evenly my-20 w-[70vw]">
           {data.map((item: Projects, index: number) => (
-            <div className="flex flex-col">
-              <div className="hover:scale-105 duration-500 w-full">
+            <div className="flex flex-col mb-20">
+              <div className="hover:scale-105 duration-500">
                 <div className="object-contain">
                   <img
                     src={item.imagem}
