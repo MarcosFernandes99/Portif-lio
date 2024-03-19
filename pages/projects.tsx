@@ -4,26 +4,33 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Projects, Technologys } from "@/types/projects.interface";
 import getTechs from "@/services/api/getTechs";
+import { json } from "stream/consumers";
 
 const Projects = () => {
   const [data, setData] = useState<Projects[]>([]);
   const [technology, setTechnology] = useState<Technologys[]>([]);
+  const [tech, setTech] = useState<string>("");
 
   console.log(technology);
-  console.log(data);
+  console.log(tech);
+
+  const techValue = (event: string) => {
+    setTech(event);
+  };
+
+  const techSelect = () => {};
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch("http://localhost:3000/api/projects");
         const jsonData = await response.json();
-        const resultTech = await getTechs();
 
         let i = 0;
         let techArray: any = [];
 
-        for (i = 0; i < resultTech.length; i++) {
-          techArray.push(resultTech[i].tecnologias);
+        for (i = 0; i < jsonData.length; i++) {
+          techArray.push(jsonData[i].tecnologias);
         }
 
         setData(jsonData);
@@ -54,8 +61,12 @@ const Projects = () => {
           <select
             name="Tech"
             id="Tech"
+            onChange={(e) => techValue(e.target.value)}
             className="bg-black w-[13rem] h-[3rem] rounded-xl p-1 text-white text-xl"
           >
+            <option value="" disabled selected hidden>
+              Tecnologia
+            </option>
             <option value="Nextjs">Next.js</option>
             <option value="Typescript">Typescript</option>
             <option value="Javascript">Javascript</option>
