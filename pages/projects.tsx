@@ -2,23 +2,24 @@ import NavBar from "../app/components/navbar";
 import Footer from "../app/components/footer";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { Projects, Technologys } from "@/types/projects.interface";
-import getTechs from "@/services/api/getTechs";
-import { json } from "stream/consumers";
+import { Projects } from "@/types/projects.interface";
 
 const Projects = () => {
   const [data, setData] = useState<Projects[]>([]);
-  const [technology, setTechnology] = useState<Technologys[]>([]);
-  const [tech, setTech] = useState<string>("");
-
-  console.log(technology);
-  console.log(tech);
+  const [originaldata, setOriginalData] = useState<Projects[]>([]);
 
   const techValue = (event: string) => {
-    setTech(event);
+    techSelect(event);
   };
 
-  const techSelect = () => {};
+  const techSelect = (e: string) => {
+    const result = originaldata.filter((project) => {
+      return project.tecnologias.includes(e);
+    });
+
+    console.log(result);
+    setData(result);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,15 +27,8 @@ const Projects = () => {
         const response = await fetch("http://localhost:3000/api/projects");
         const jsonData = await response.json();
 
-        let i = 0;
-        let techArray: any = [];
-
-        for (i = 0; i < jsonData.length; i++) {
-          techArray.push(jsonData[i].tecnologias);
-        }
-
         setData(jsonData);
-        setTechnology(techArray);
+        setOriginalData(jsonData);
       } catch (error) {
         console.error("Erro ao obter dados do MongoDB;", error);
       }
@@ -67,7 +61,8 @@ const Projects = () => {
             <option value="" disabled selected hidden>
               Tecnologia
             </option>
-            <option value="Nextjs">Next.js</option>
+            <option value="Nextjs">Nextjs</option>
+            <option value="React">React</option>
             <option value="Typescript">Typescript</option>
             <option value="Javascript">Javascript</option>
             <option value="CSS">CSS</option>
@@ -91,10 +86,8 @@ const Projects = () => {
               </div>
 
               <div className="flex text-cinzaMedio justify-around text-xl mt-4">
-                {technology[index].map((tech: number, i: number) => (
-                  <span key={i} className="">
-                    {tech}
-                  </span>
+                {item.tecnologias.map((tech, i) => (
+                  <span key={i}>{tech}</span>
                 ))}
               </div>
 
