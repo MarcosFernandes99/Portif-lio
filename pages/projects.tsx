@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Projects } from "@/types/projects.interface";
 
-const Projects = () => {
+const Project = () => {
   const [data, setData] = useState<Projects[]>([]);
   const [originaldata, setOriginalData] = useState<Projects[]>([]);
 
@@ -115,4 +115,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Project;

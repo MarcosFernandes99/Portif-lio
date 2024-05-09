@@ -143,11 +143,11 @@ export default function Home() {
       </section>
 
       <section
-        className="flex bg-black min-w-screen min-h-[35rem] justify-around"
+        className="flex flex-col md:flex-row bg-black min-w-screen min-h-[35rem] md:justify-around"
         id="sobre"
       >
-        <div className="flex flex-col w-[40%] mt-10">
-          <span className="text-cinzaMedio text-2xl">Sobre mim</span>
+        <div className="flex flex-col w-[80%] mx-6 md:w-[40%]">
+          <span className="text-cinzaMedio text-2xl mt-10">Sobre mim</span>
           <span className="text-white text-5xl mt-4">
             Profissional{" "}
             <span className="text-verde">Desenvolvedor Front End</span>
@@ -198,9 +198,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-[40%] mt-10">
-          <span className="text-cinzaMedio text-2xl ml-12">Serviços</span>
-          <div className="flex items-center mt-10">
+        <div className="flex flex-col w-[80%] md:w-[40%] mt-10 mx-6 mb-10">
+          <span className="text-cinzaMedio text-2xl">Serviços</span>
+          <div className="flex items-center mt-5">
             <span className="w-9 h-9 ">
               <Image src={check} alt="Check"></Image>
             </span>
