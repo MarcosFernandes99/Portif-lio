@@ -260,10 +260,10 @@ export default function Home() {
       </section>
 
       <section
-        className="flex bg-cinzaClaro min-w-screen min-h-[35rem] justify-around"
+        className="flex flex-col bg-cinzaClaro min-w-screen min-h-[35rem] justify-around md:flex-row"
         id="habilidades"
       >
-        <div className="flex flex-col mt-10 w-[40%]">
+        <div className="flex flex-col mt-10 w-[85%] md:w-[40%] mx-10">
           <span className="text-white text-2xl">Habilidades</span>
           <span className="text-white text-5xl mt-5">
             Vamos explorar{" "}
@@ -285,86 +285,96 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="flex mt-10 w-[40%] justify-center flex-wrap">
-          <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+        <div className="flex my-10 mx-10 w-[85%] justify-center flex-wrap md:w-[40%]">
+          <div className="flex mb-5 flex-col items-center bg-cinzaMedio p-2 h-32 w-24 md:h-36 md:w-28 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
             <span>
               <Image
                 src={
                   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
                 }
                 alt="React"
-                width={70}
-                height={70}
+                width={60}
+                height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-xl mt-10 text-white">React</span>
+            <span className="mb-auto text-xl mt-5 md:mt-10 text-white">
+              React
+            </span>
           </div>
-          <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+          <div className="flex mb-5 flex-col items-center bg-cinzaMedio p-2 h-32 w-24 md:h-36 md:w-28 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
             <span>
               <Image
                 src={
                   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
                 }
                 alt="Typeescript"
-                width={70}
-                height={70}
+                width={60}
+                height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-white text-xl mt-10">Typescript</span>
+            <span className="mb-auto text-white text-xl mt-5 md:mt-10">
+              Typescript
+            </span>
           </div>
-          <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+          <div className="flex flex-col mb-5 items-center bg-cinzaMedio p-2 h-32 w-24 md:h-36 md:w-28 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
             <span>
               <Image
                 src={
                   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
                 }
                 alt="Next.js"
-                width={70}
-                height={70}
+                width={60}
+                height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-white text-xl mt-10">Next.js</span>
+            <span className="mb-auto text-white text-xl mt-5 md:mt-10">
+              Next.js
+            </span>
           </div>
-          <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+          <div className="flex flex-col mb-5 items-center bg-cinzaMedio p-2 h-32 w-24 mx-6 md:h-36 md:w-28 rounded-2xl transition-transform transform hover:scale-110 duration-500">
             <span>
               <Image
                 src={
                   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
                 }
                 alt="Tailwind CSS"
-                width={70}
-                height={70}
+                width={60}
+                height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-white text-xl mt-10">
-              Tailwind CSS
+            <span className="mb-auto text-white text-xl mt-5 md:mt-10">
+              Tailwind
             </span>
           </div>
-          <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+          <div className="flex flex-col mb-5 items-center bg-cinzaMedio p-2 h-32 w-24 md:h-36 md:w-28 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
             <span>
               <Image
                 src={
                   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg"
                 }
                 alt="Nodejs"
-                width={70}
-                height={70}
+                width={60}
+                height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-white text-xl mt-10">Node.js</span>
+            <span className="mb-auto text-white text-xl mt-5 md:mt-10">
+              Node.js
+            </span>
           </div>
-          <div className="flex flex-col items-center bg-cinzaMedio p-2 h-40 w-32 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+          <div className="flex flex-col mb-5 items-center bg-cinzaMedio p-2 h-32 w-24 md:h-36 md:w-28 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
             <span>
               <Image
                 src={
                   "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
                 }
                 alt="Javascript"
-                width={70}
-                height={70}
+                width={60}
+                height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-white text-xl mt-10">Javascript</span>
+            <span className="mb-auto text-white text-xl mt-5 md:mt-10">
+              Javascript
+            </span>
           </div>
         </div>
       </section>
