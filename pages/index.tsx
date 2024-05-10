@@ -391,15 +391,15 @@ export default function Home() {
             Explore meus <span className="text-verde">Projetos Populares</span>
           </span>
         </div>
-        <div className="flex justify-around w-[70%] min-h-80">
-          <div className="w-[35%] transition-transform transform hover:scale-110 duration-500">
+        <div className="flex flex-col md:flex-row justify-around w-[70%] min-h-80">
+          <div className="w-full md:w-[35%] transition-transform transform hover:scale-110 duration-500">
             <Image
               src={wheatherApp}
               alt="Wheather App"
               className="object-cover rounded-xl"
             ></Image>
           </div>
-          <div className="flex flex-col justify-center w-[35%]">
+          <div className="flex flex-col justify-center w-full md:w-[35%]">
             <span className="text-verde text-xl">Wheather App</span>
             <span className="text-white text-4xl mt-5">
               Aplicativo de previsão de tempo
@@ -420,8 +420,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-around w-[70%] min-h-80 mt-16">
-          <div className="flex flex-col justify-center w-[35%]">
+        <div className="flex flex-col-reverse md:flex-row justify-around w-[70%] min-h-80 mt-16">
+          <div className="flex flex-col justify-center w-full md:w-[35%]">
             <span className="text-verde text-xl">Todo APP</span>
             <span className="text-white text-4xl mt-5">
               {" "}
@@ -443,7 +443,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="w-[35%] transition-transform transform hover:scale-110 duration-500">
+          <div className="w-full md:w-[35%] transition-transform transform hover:scale-110 duration-500">
             <Image
               src={todoApp}
               alt="Todo App"
