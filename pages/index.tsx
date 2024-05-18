@@ -465,10 +465,10 @@ export default function Home() {
       </section>
 
       <section
-        className="flex bg-cinzaClaro min-w-screen min-h-[35rem] justify-around"
+        className="flex flex-col md:flex-row bg-cinzaClaro min-w-screen min-h-[35rem] justify-around items-center"
         id="contato"
       >
-        <div className="flex flex-col w-[40%] mt-10">
+        <div className="flex flex-col w-[85%] md:w-[40%] mt-10">
           <span className="text-cinzaClaro text-2xl">Contato</span>
           <span className="text-white text-5xl mt-5">
             Vamos conversar sobre seus{" "}
@@ -500,10 +500,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex w-[40%] mt-10">
+        <div className="flex w-[85%] md:w-[40%] mt-10">
           <form action="">
             <div className="flex flex-wrap justify-between">
-              <div className="flex flex-col">
+              <div className="flex flex-col mt-5 w-[45%]">
                 {" "}
                 <label htmlFor="" className="text-white text-xl">
                   Nome <span className="text-verde text-2xl">*</span>
@@ -512,10 +512,10 @@ export default function Home() {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="bg-cinzaMedio rounded-xl mt-2 min-h-10 w-64 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
+                  className="bg-cinzaMedio rounded-xl mt-2 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
                 />
               </div>
-              <div className="flex flex-col ml-16">
+              <div className="flex flex-col mt-5 w-[45%]">
                 {" "}
                 <label htmlFor="" className="text-white text-xl">
                   E-mail <span className="text-verde text-2xl">*</span>
@@ -524,23 +524,22 @@ export default function Home() {
                   type="text"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="bg-cinzaMedio rounded-xl mt-2 min-h-10 w-64 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
+                  className="bg-cinzaMedio rounded-xl mt-2 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
                 />
               </div>
-              <div className="flex flex-col mt-10">
+              <div className="flex flex-col mt-5 w-[45%]">
                 {" "}
                 <label htmlFor="" className="text-white text-xl">
-                  Número de Telefone{" "}
-                  <span className="text-verde text-2xl">*</span>
+                  Telefone <span className="text-verde text-2xl">*</span>
                 </label>
                 <input
                   type="text"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  className="bg-cinzaMedio rounded-xl mt-2 min-h-10 w-64 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
+                  className="bg-cinzaMedio rounded-xl mt-2 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
                 />
               </div>
-              <div className="flex flex-col mt-10 ml-16">
+              <div className="flex flex-col mt-5 w-[45%]">
                 {" "}
                 <label htmlFor="" className="text-white text-xl">
                   Assunto <span className="text-verde text-2xl">*</span>
@@ -549,10 +548,10 @@ export default function Home() {
                   type="text"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
-                  className="bg-cinzaMedio rounded-xl mt-2 min-h-10 w-64 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
+                  className="bg-cinzaMedio rounded-xl mt-2 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
                 />
               </div>
-              <div className="flex flex-col mt-10 flex-grow">
+              <div className="flex flex-col mt-10 flex-grow w-full">
                 {" "}
                 <label htmlFor="" className="text-white text-xl">
                   Mensagem <span className="text-verde text-2xl">*</span>
@@ -560,13 +559,13 @@ export default function Home() {
                 <textarea
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="bg-cinzaMedio rounded-xl mt-2 min-h-24 w-full text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
+                  className="bg-cinzaMedio rounded-xl mt-2 min-h-24 text-white p-2 text-xl focus:outline-none focus:ring-2 focus:ring-verde"
                 />
               </div>
             </div>
             <button
               onClick={handleButtonClick}
-              className="bg-verde flex mt-10 p-2 text-xl rounded-xl items-center font-bold hover:scale-110 duration-500"
+              className="bg-verde flex my-10 p-2 text-xl rounded-xl items-center font-bold hover:scale-110 duration-500"
             >
               Enviar mensagem
               <Image src={enviar} alt="Enviar" className="w-4 h-4 ml-2"></Image>
