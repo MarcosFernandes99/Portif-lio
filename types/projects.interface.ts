@@ -7,3 +7,7 @@ export interface Projects {
   urlGit: string;
   imagem: string;
 }
+
+export interface MenuSectedProps {
+  scrollToSection: (sectionId: string) => void;
+}

@@ -1,5 +1,5 @@
-import NavBar from "../app/components/navbar";
-import Footer from "../app/components/footer";
+import NavBar from "../app/components/Navbar";
+import Footer from "../app/components/Footer";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Projects } from "@/types/projects.interface";
