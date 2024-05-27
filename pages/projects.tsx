@@ -2,9 +2,10 @@ import NavBar from "../app/components/Navbar";
 import Footer from "../app/components/Footer";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { Projects } from "@/types/projects.interface";
+import { MenuSectedProps, Projects } from "@/types/projects.interface";
+import MenuSelect from "@/app/components/MenuSelected";
 
-const Project = () => {
+const Project = ({ scrollToSection }: MenuSectedProps) => {
   const [data, setData] = useState<Projects[]>([]);
   const [originaldata, setOriginalData] = useState<Projects[]>([]);
 
@@ -39,7 +40,8 @@ const Project = () => {
 
   return (
     <>
-      <NavBar></NavBar>
+      <MenuSelect scrollToSection={scrollToSection}></MenuSelect>
+      <NavBar scrollToSection={scrollToSection}></NavBar>
 
       <section className="min-w-screen min-h-screen bg-cinzaEscuro flex flex-col items-center">
         <div className="flex flex-col">

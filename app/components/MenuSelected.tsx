@@ -15,7 +15,7 @@ export default function MenuSelect({ scrollToSection }: MenuSectedProps) {
   };
 
   return (
-    <div className="flex justify-center bg-cinzaClaro p-2 fixed z-50 w-full">
+    <div className="flex justify-center bg-cinzaClaro p-2 fixed z-50 w-full sm:hidden">
       <div className="bg-verde rounded-full w-9 h-9 flex items-center justify-center">
         <span className="text-black font-bold text-xl">M</span>
       </div>

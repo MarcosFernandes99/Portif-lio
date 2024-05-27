@@ -16,6 +16,8 @@ import wheatherApp from "../public/wheather_app.png";
 import todoApp from "../public/todo_app.png";
 import Swal from "sweetalert2";
 import "../app/globals.css";
+import MenuSelect from "@/app/components/MenuSelected";
+import { MenuSectedProps } from "@/types/projects.interface";
 
 const scrollToBottom = () => {
   window.scrollTo({
@@ -94,9 +96,28 @@ export default function Home() {
     }
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const isOnProjectsPage = window.location.pathname === "/projects";
+    const section = document.getElementById(sectionId);
+
+    if (sectionId === "projetos" && isOnProjectsPage) {
+      return;
+    }
+
+    if (isOnProjectsPage) {
+      window.location.href = "/";
+    } else if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
-      <NavBar></NavBar>
+      <MenuSelect scrollToSection={scrollToSection}></MenuSelect>
+      <NavBar scrollToSection={scrollToSection}></NavBar>
 
       <section
         className="bg-cinzaEscuro min-w-screen min-h-screen flex justify-around"
