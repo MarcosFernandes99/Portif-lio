@@ -120,10 +120,10 @@ export default function Home() {
       <NavBar scrollToSection={scrollToSection}></NavBar>
 
       <section
-        className="bg-cinzaEscuro min-w-screen min-h-screen flex justify-around"
+        className="bg-cinzaEscuro min-w-screen min-h-screen flex flex-col-reverse lg:flex-row lg:justify-around items-center"
         id="inicio"
       >
-        <div className="flex flex-col min-h-screen w-[40%] ml-12">
+        <div className="flex flex-col w-[85%] lg:w-[40%] lg:ml-12 mb-10 mt-[-20vh]">
           <span className="text-cinzaMedio text-2xl mt-48">Olá eu sou,</span>
           <span className="text-verde text-5xl">Marcos Fernandes</span>
           <span className="text-white text-5xl">Desenvolvedor Front End</span>
@@ -154,20 +154,20 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="rounded-full bg-black w-[40%] h-[80vh] mt-24">
+        <div className="rounded-full bg-black w-[65%] lg:w-[40%] lg:h-[80vh] mt-24 flex justify-center p-5 lg:p-0">
           <Image
             src={fotoInicio}
             alt="Foto Inicio"
-            className="object-contain mt-8"
+            className="object-contain sm:mr-14"
           ></Image>
         </div>
       </section>
 
       <section
-        className="flex flex-col md:flex-row bg-black min-w-screen min-h-[35rem] md:justify-around"
+        className="flex flex-col md:flex-row bg-black min-w-screen min-h-[35rem] md:justify-around items-center"
         id="sobre"
       >
-        <div className="flex flex-col w-[80%] mx-6 md:w-[40%]">
+        <div className="flex flex-col w-[85%] mx-6 md:w-[40%]">
           <span className="text-cinzaMedio text-2xl mt-10">Sobre mim</span>
           <span className="text-white text-5xl mt-4">
             Profissional{" "}
@@ -281,7 +281,7 @@ export default function Home() {
       </section>
 
       <section
-        className="flex flex-col bg-cinzaClaro min-w-screen min-h-[35rem] justify-around md:flex-row"
+        className="flex flex-col bg-cinzaClaro min-w-screen min-h-[35rem] justify-around md:flex-row items-center"
         id="habilidades"
       >
         <div className="flex flex-col mt-10 w-[85%] md:w-[40%] mx-10">
@@ -408,7 +408,7 @@ export default function Home() {
           <span className="text-cinzaMedio text-xl">
             Trabalhos mais recentes
           </span>
-          <span className="text-white text-4xl">
+          <span className="text-white text-4xl flex flex-col items-center">
             Explore meus <span className="text-verde">Projetos Populares</span>
           </span>
         </div>
