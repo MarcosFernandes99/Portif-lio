@@ -17,7 +17,7 @@ import todoApp from "../public/todo_app.png";
 import Swal from "sweetalert2";
 import "../app/globals.css";
 import MenuSelect from "@/app/components/MenuSelected";
-import { MenuSectedProps } from "@/types/projects.interface";
+import { scrollToSection } from "@/utils/scrollSection";
 
 const scrollToBottom = () => {
   window.scrollTo({
@@ -92,24 +92,6 @@ export default function Home() {
         "",
         "error"
       );
-    }
-  };
-
-  const scrollToSection = (sectionId: string) => {
-    const isOnProjectsPage = window.location.pathname === "/projects";
-    const section = document.getElementById(sectionId);
-
-    if (sectionId === "projetos" && isOnProjectsPage) {
-      return;
-    }
-
-    if (isOnProjectsPage) {
-      window.location.href = "/";
-    } else if (section) {
-      window.scrollTo({
-        top: section.offsetTop,
-        behavior: "smooth",
-      });
     }
   };
 

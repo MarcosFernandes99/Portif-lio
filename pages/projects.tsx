@@ -2,10 +2,11 @@ import NavBar from "../app/components/Navbar";
 import Footer from "../app/components/Footer";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { MenuSectedProps, Projects } from "@/types/projects.interface";
+import { Projects } from "@/types/projects.interface";
 import MenuSelect from "@/app/components/MenuSelected";
+import { scrollToSection } from "@/utils/scrollSection";
 
-const Project = ({ scrollToSection }: MenuSectedProps) => {
+const Project = () => {
   const [data, setData] = useState<Projects[]>([]);
   const [originaldata, setOriginalData] = useState<Projects[]>([]);
 
@@ -44,11 +45,11 @@ const Project = ({ scrollToSection }: MenuSectedProps) => {
       <NavBar scrollToSection={scrollToSection}></NavBar>
 
       <section className="min-w-screen min-h-screen bg-cinzaEscuro flex flex-col items-center">
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center justify-center">
           <span className="text-white text-5xl mt-24 flex justify-center">
             Portifólio
           </span>
-          <span className="text-cinzaClaro text-2xl mt-5">
+          <span className="text-cinzaClaro text-2xl mt-5 flex justify-center items-center">
             Escolhe a tecnologia utilizada no projeto:
           </span>
         </div>
@@ -74,20 +75,20 @@ const Project = ({ scrollToSection }: MenuSectedProps) => {
           </select>
         </div>
 
-        <div className="flex flex-wrap justify-evenly my-20 w-[70vw]">
+        <div className="flex flex-wrap justify-evenly my-10 w-[90%] sm:w-[70vw] items-center">
           {data.map((item: Projects, index: number) => (
             <div className="flex flex-col mb-20">
               <div className="hover:scale-105 duration-500">
-                <div className="object-contain">
+                <div className="">
                   <img
                     src={item.imagem}
                     alt="Imagem"
-                    className="rounded-xl h-96 w-96"
+                    className="rounded-xl w-[20rem] h-[19rem]"
                   />
                 </div>
               </div>
 
-              <div className="flex text-cinzaMedio justify-around text-xl mt-4">
+              <div className="flex text-cinzaMedio justify-around text-xl mt-4 w-full flex-wrap">
                 {item.tecnologias.map((tech, i) => (
                   <span key={i}>{tech}</span>
                 ))}
