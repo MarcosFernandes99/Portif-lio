@@ -346,6 +346,21 @@ export default function Home() {
               Tailwind
             </span>
           </div>
+          <div className="flex mb-5 flex-col items-center bg-cinzaMedio p-2 h-32 w-24 md:h-36 md:w-28 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+            <span>
+              <Image
+                src={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                }
+                alt="CSS"
+                width={60}
+                height={60}
+              ></Image>
+            </span>
+            <span className="mb-auto text-xl mt-5 md:mt-10 text-white">
+              CSS3
+            </span>
+          </div>
           <div className="flex flex-col mb-5 items-center bg-cinzaMedio p-2 h-32 w-24 md:h-36 md:w-28 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
             <span>
               <Image
@@ -374,6 +389,21 @@ export default function Home() {
             </span>
             <span className="mb-auto text-white text-xl mt-5 md:mt-10">
               Javascript
+            </span>
+          </div>
+          <div className="flex mb-5 flex-col items-center bg-cinzaMedio p-2 h-32 w-24 md:h-36 md:w-28 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
+            <span>
+              <Image
+                src={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                }
+                alt="MongoDB"
+                width={60}
+                height={60}
+              ></Image>
+            </span>
+            <span className="mb-auto text-xl mt-5 md:mt-10 text-white">
+              MongoDB
             </span>
           </div>
         </div>
