@@ -109,11 +109,10 @@ export default function Home() {
           <span className="text-verde text-5xl">Marcos Fernandes</span>
           <span className="text-white text-5xl">Desenvolvedor Front End</span>
           <span className="text-cinzaMedio text-lg mt-12 text-justify">
-            Atuando há mais de 3 anos como Freelancer, venho entregando
-            consistentemente projetos que superam as expectativas dos meus
-            clientes. Minha paixão pelo que faço se reflete em meus projetos,
-            que não apenas seguem as últimas tendências do mercado, mas também
-            capturam a identidade única de cada cliente.
+            Atuando há mais de 1 ano como freelancer, criando projetos que
+            extraia a identidade do cliente, de forma clara e objetiva.
+            Conhecedor e preparado para trabalhar com as tecnologias mais
+            utilizadas do mercado.
           </span>
           <div className="flex mt-12">
             <button
@@ -160,10 +159,9 @@ export default function Home() {
             oportunidade de criar algo único e impactante. Minha jornada no
             mundo da tecnologia é impulsionada pela busca constante por
             conhecimento. Estou sempre aberto a novos desafios e colaborações.
-            Seja bem-vindo ao meu espaço virtual, onde a paixão pela criação se
-            encontra com a expertise técnica.
+            Seja bem-vindo ao meu espaço virtual.
           </span>
-          <div className="flex justify-around bg-cinzaClaro min-h-28 rounded-3xl mt-10 ">
+          <div className="flex flex-col md:flex-row justify-center items-center md:justify-around bg-cinzaClaro min-h-28 rounded-3xl mt-10 p-2">
             <div className="flex items-center transition-transform transform hover:scale-110 duration-500">
               <span className="bg-verde rounded-full w-7 h-7">
                 <Image src={iconEmail} alt="icon email" className="p-1"></Image>
@@ -273,10 +271,10 @@ export default function Home() {
           </span>
           <span className="text-justify text-white mt-10">
             Profissional com sólida experiência nas últimas tecnologias do
-            mercado. Apaixonado por transformar ideias em realidade digital.
-            Especializado na criação não apenas de sites intuitivos e atrativos,
-            mas também em sistemas personalizados, como menus interativos e
-            eficientes sistemas de agendamento online para o seu negócio.
+            mercado. Me dedico não apenas na criação de sites intuitivos e
+            atrativos, mas também a um projeto personalizado, como por exemplo
+            um projeto completo que necessite de uma integração junto a um banco
+            de dados.
           </span>
           <div className="flex">
             <button
