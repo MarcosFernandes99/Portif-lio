@@ -3,8 +3,8 @@ import { MongoClient, Db } from "mongodb";
 let uri = process.env.MONGODB_URI;
 let dbName = process.env.MONGODB_DB;
 
-let cachedClient: MongoClient;
-let cacheDb: Db;
+let cachedClient: MongoClient | null = null;
+let cacheDb: Db | null = null;
 
 if (!uri) {
   throw new Error("Por favor defina a variável MONDODB_URI");
@@ -19,12 +19,9 @@ export async function connectToDataBase() {
     return { client: cachedClient, db: cacheDb };
   }
 
-  const client = await MongoClient.connect(uri, {
-    useNewUrlParser: true,
-    useUnifiedTopoLogy: true,
-  });
+  const client = await MongoClient.connect(uri as string);
 
-  const db = await client.db(dbName);
+  const db = client.db(dbName);
 
   cachedClient = client;
   cacheDb = db;
