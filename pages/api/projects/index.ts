@@ -1,7 +1,7 @@
-import { NextApiHandler, NextApiResponse } from "next";
+import { NextApiHandler, NextApiRequest, NextApiResponse } from "next";
 import { connectToDataBase } from "../../../utils/mongodb";
 
-const handler = async (req: NextApiHandler, res: NextApiResponse) => {
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const { method } = req;
 
@@ -18,7 +18,13 @@ const handler = async (req: NextApiHandler, res: NextApiResponse) => {
         res.status(405).end(`Method ${method} not Allowed`);
     }
   } catch (err) {
-    res.status(500).json({ statusCode: 500, message: err.message });
+    if (err instanceof Error) {
+      res.status(500).json({ statusCode: 500, message: err.message });
+    } else {
+      res
+        .status(500)
+        .json({ statusCode: 500, message: "An unknown error occurred" });
+    }
   }
 };
 
