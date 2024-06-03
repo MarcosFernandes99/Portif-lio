@@ -77,7 +77,7 @@ const Project = () => {
 
         <div className="flex flex-wrap justify-evenly my-10 w-[90%] sm:w-[70vw] items-center">
           {data.map((item: Projects, index: number) => (
-            <div className="flex flex-col mb-20">
+            <div key={index} className="flex flex-col mb-20">
               <div className="hover:scale-105 duration-500">
                 <div className="">
                   <img
