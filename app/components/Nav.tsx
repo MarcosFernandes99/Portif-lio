@@ -3,7 +3,7 @@
 import { MenuSectedProps } from "@/types/projects.interface";
 import React from "react";
 
-export default function NavBar({ scrollToSection }: MenuSectedProps) {
+export default function Nav({ scrollToSection }: MenuSectedProps) {
   return (
     <div className="min-w-full min-h-20 bg-cinzaClaro text-white justify-center items-center font-extrabold text-xl fixed z-50 hidden sm:flex">
       <button

@@ -13,7 +13,7 @@ const scrollToTop = () => {
     behavior: "smooth",
   });
 };
-export default function Footer() {
+export default function Rodape() {
   return (
     <>
       <section className="flex min-w-screen bg-black min-h-[10rem] justify-center">

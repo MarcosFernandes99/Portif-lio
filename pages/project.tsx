@@ -1,12 +1,12 @@
-import NavBar from "../app/components/Navbar";
-import Footer from "../app/components/Footer";
+import Nav from "../app/components/Nav";
+import Rodape from "../app/components/Rodape";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Projects } from "@/types/projects.interface";
 import MenuSelect from "@/app/components/MenuSelected";
 import { scrollToSection } from "@/utils/scrollSection";
 
-const projects = () => {
+const Project = () => {
   const [data, setData] = useState<Projects[]>([]);
   const [originaldata, setOriginalData] = useState<Projects[]>([]);
 
@@ -42,7 +42,7 @@ const projects = () => {
   return (
     <>
       <MenuSelect scrollToSection={scrollToSection}></MenuSelect>
-      <NavBar scrollToSection={scrollToSection}></NavBar>
+      <Nav scrollToSection={scrollToSection}></Nav>
 
       <section className="min-w-screen min-h-screen bg-cinzaEscuro flex flex-col items-center">
         <div className="flex flex-col items-center justify-center">
@@ -113,9 +113,9 @@ const projects = () => {
         </div>
       </section>
 
-      <Footer></Footer>
+      <Rodape></Rodape>
     </>
   );
 };
 
-export default projects;
+export default Project;

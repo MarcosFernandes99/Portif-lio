@@ -10,8 +10,8 @@ import check from "../public/check.png";
 import estrela from "../public/estrela.png";
 import enviar from "../public/enviar.png";
 import Link from "next/link";
-import NavBar from "../app/components/Navbar";
-import Footer from "../app/components/Footer";
+import Nav from "../app/components/Nav";
+import Rodape from "../app/components/Rodape";
 import wheatherApp from "../public/wheather_app.png";
 import todoApp from "../public/todo_app.png";
 import Swal from "sweetalert2";
@@ -32,7 +32,7 @@ const downloadCV = () => {
   window.open(cv, "_blank");
 };
 
-export default function index() {
+const Home = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -98,7 +98,7 @@ export default function index() {
   return (
     <>
       <MenuSelect scrollToSection={scrollToSection}></MenuSelect>
-      <NavBar scrollToSection={scrollToSection}></NavBar>
+      <Nav scrollToSection={scrollToSection}></Nav>
 
       <section
         className="bg-cinzaEscuro min-w-screen min-h-screen flex flex-col-reverse lg:flex-row lg:justify-around items-center"
@@ -604,7 +604,8 @@ export default function index() {
         </div>
       </section>
 
-      <Footer></Footer>
+      <Rodape></Rodape>
     </>
   );
-}
+};
+export default Home;
