@@ -395,15 +395,15 @@ export default function Home() {
             <span>
               <Image
                 src={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
                 }
-                alt="MongoDB"
+                alt="Bootstrap"
                 width={60}
                 height={60}
               ></Image>
             </span>
             <span className="mb-auto text-xl mt-5 md:mt-10 text-white">
-              MongoDB
+              Bootstrap
             </span>
           </div>
         </div>
