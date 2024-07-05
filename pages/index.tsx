@@ -32,7 +32,7 @@ const downloadCV = () => {
   window.open(cv, "_blank");
 };
 
-export default function Home() {
+export default function index() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");

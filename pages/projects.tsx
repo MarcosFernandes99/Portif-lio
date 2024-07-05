@@ -6,7 +6,7 @@ import { Projects } from "@/types/projects.interface";
 import MenuSelect from "@/app/components/MenuSelected";
 import { scrollToSection } from "@/utils/scrollSection";
 
-const Project = () => {
+const projects = () => {
   const [data, setData] = useState<Projects[]>([]);
   const [originaldata, setOriginalData] = useState<Projects[]>([]);
 
@@ -118,4 +118,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default projects;
