@@ -482,7 +482,7 @@ const Home = () => {
           </div>
         </div>
         <Link
-          href="/projects"
+          href="/project"
           className="bg-verde p-2 text-2xl rounded-xl font-bold hover:scale-110 duration-500 items-center flex my-16 cursor-pointer"
         >
           Ver mais projetos{" "}
