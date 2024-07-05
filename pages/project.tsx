@@ -8,6 +8,7 @@ import { scrollToSection } from "@/utils/scrollSection";
 import wheatherApp from "../public/wheather_app.png";
 import todoApp from "../public/todo_app.png";
 import registroelogin from "../public/registroelogin.jpg";
+import "../app/globals.css";
 
 const Project = () => {
   // const [data, setData] = useState<Projects[]>([]);
