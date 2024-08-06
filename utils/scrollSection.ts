@@ -1,5 +1,5 @@
 export const scrollToSection = (sectionId: string) => {
-  const isOnProjectsPage = window.location.pathname === "/projects";
+  const isOnProjectsPage = window.location.pathname === "/project";
   const section = document.getElementById(sectionId);
 
   if (sectionId === "projetos" && isOnProjectsPage) {
