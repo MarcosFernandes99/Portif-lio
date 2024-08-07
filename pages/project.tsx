@@ -65,7 +65,7 @@ const Project = () => {
 
         <div className="text-center mb-8">
           <h3 className="text-4xl text-white">Casa de Pedra</h3>
-          <h4 className="text-lg text-cinzaClaro mt-2">
+          <h4 className="text-lg text-cinzaClaro mt-2 px-4">
             Projeto desenvolvido para uma seguradora, com aproximadamente 50
             páginas, <p>abaixo segue algumas que ficaram incríveis!</p>
           </h4>
@@ -73,7 +73,7 @@ const Project = () => {
 
         <div
           id="carouselExample"
-          className="carousel slide mb-20 p-12"
+          className="carousel slide mb-20 px-4 pb-10"
           data-bs-ride="carousel"
         >
           <div className="carousel-indicators">
