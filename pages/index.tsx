@@ -104,7 +104,7 @@ const Home = () => {
         className="bg-cinzaEscuro min-w-screen min-h-screen flex flex-col-reverse lg:flex-row lg:justify-around items-center"
         id="inicio"
       >
-        <div className="flex flex-col w-[85%] lg:w-[40%] lg:ml-12 mb-10 mt-[-20vh]">
+        <div className="flex flex-col w-[85%] lg:w-[40%] lg:ml-12 mb-10 mt-[-20vh] text-center">
           <span className="text-cinzaMedio text-2xl mt-48">Olá eu sou,</span>
           <span className="text-verde text-5xl">Marcos Fernandes</span>
           <span className="text-white text-5xl">Desenvolvedor Front End</span>
@@ -114,7 +114,7 @@ const Home = () => {
             Conhecedor e preparado para trabalhar com as tecnologias mais
             utilizadas do mercado.
           </span>
-          <div className="flex mt-12">
+          <div className="flex mt-12 ml-auto mr-auto ">
             <button
               className="bg-verde text-2xl p-2 rounded-2xl hover:bg-black hover:text-white font-bold duration-500"
               onClick={scrollToBottom}
@@ -147,13 +147,15 @@ const Home = () => {
         className="flex flex-col md:flex-row bg-black min-w-screen min-h-[35rem] md:justify-around items-center"
         id="sobre"
       >
-        <div className="flex flex-col w-[85%] mx-6 md:w-[40%]">
-          <span className="text-cinzaMedio text-2xl mt-10">Sobre mim</span>
-          <span className="text-white text-5xl mt-4">
+        <div className="flex flex-col w-[80%] md:w-[40%] mt-2 mx-6 mb-10">
+          <span className="text-cinzaMedio text-2xl mt-10 text-center">
+            Sobre mim
+          </span>
+          <span className="text-white text-5xl xl:mt-4 mt-5">
             Profissional{" "}
             <span className="text-verde">Desenvolvedor Front End</span>
           </span>
-          <span className="text-white mt-8 text-justify">
+          <span className="text-white xl:mt-10 mt-14 text-justify">
             Desenvolvedor front-end apaixonado por transformar ideias em
             experiências digitais atrativas. Acredito que cada projeto é uma
             oportunidade de criar algo único e impactante. Minha jornada no
@@ -161,7 +163,7 @@ const Home = () => {
             conhecimento. Estou sempre aberto a novos desafios e colaborações.
             Seja bem-vindo ao meu espaço virtual.
           </span>
-          <div className="flex flex-col md:flex-row justify-center items-center md:justify-around bg-cinzaClaro min-h-28 rounded-3xl mt-10 p-2">
+          <div className="flex flex-col lg:flex-row justify-center items-center md:justify-around bg-cinzaClaro min-h-28 rounded-3xl mt-14 xl:mt-10 p-2">
             <div className="flex items-center transition-transform transform hover:scale-110 duration-500">
               <span className="bg-verde rounded-full w-7 h-7">
                 <Image src={iconEmail} alt="icon email" className="p-1"></Image>
@@ -198,8 +200,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-[80%] md:w-[40%] mt-10 mx-6 mb-10">
-          <span className="text-cinzaMedio text-2xl">Serviços</span>
+        <div className="flex flex-col w-[80%] md:w-[40%] mt-2 mx-6 mb-10">
+          <span className="text-cinzaMedio text-2xl mt-10 text-center">
+            Serviços
+          </span>
           <div className="flex items-center mt-5">
             <span className="w-9 h-9 ">
               <Image src={check} alt="Check"></Image>
@@ -260,7 +264,7 @@ const Home = () => {
       </section>
 
       <section
-        className="flex flex-col bg-cinzaClaro min-w-screen min-h-[35rem] justify-around md:flex-row items-center"
+        className="flex flex-col bg-cinzaClaro min-w-screen min-h-[35rem] justify-around md:flex-row"
         id="habilidades"
       >
         <div className="flex flex-col mt-10 w-[85%] md:w-[40%] mx-10">
@@ -269,7 +273,7 @@ const Home = () => {
             Vamos explorar{" "}
             <span className="text-verde">minhas habilidades</span>
           </span>
-          <span className="text-justify text-white mt-10">
+          <span className="text-justify text-white mt-14">
             Profissional com sólida experiência nas últimas tecnologias do
             mercado. Me dedico não apenas na criação de sites intuitivos e
             atrativos, mas também a um projeto personalizado, como por exemplo
@@ -278,7 +282,7 @@ const Home = () => {
           </span>
           <div className="flex">
             <button
-              className="bg-verde p-2 mt-10 text-2xl rounded-2xl hover:bg-black hover:text-white font-bold duration-500"
+              className="bg-verde p-2 mt-14 text-2xl rounded-2xl hover:bg-black hover:text-white font-bold duration-500"
               onClick={scrollToBottom}
             >
               Contate-me
@@ -297,7 +301,7 @@ const Home = () => {
                 height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-xl mt-5 md:mt-10 text-white">
+            <span className="mb-auto text-xl mt-6 md:mt-10 text-white">
               React
             </span>
           </div>
@@ -312,7 +316,7 @@ const Home = () => {
                 height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-white text-xl mt-5 md:mt-10">
+            <span className="mb-auto text-white text-xl mt-6 md:mt-10">
               Typescript
             </span>
           </div>
@@ -327,7 +331,7 @@ const Home = () => {
                 height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-white text-xl mt-5 md:mt-10">
+            <span className="mb-auto text-white text-xl mt-6 md:mt-10">
               Next.js
             </span>
           </div>
@@ -342,7 +346,7 @@ const Home = () => {
                 height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-white text-xl mt-5 md:mt-10">
+            <span className="mb-auto text-white text-xl mt-6 md:mt-10">
               Tailwind
             </span>
           </div>
@@ -357,23 +361,8 @@ const Home = () => {
                 height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-xl mt-5 md:mt-10 text-white">
+            <span className="mb-auto text-xl mt-6 md:mt-10 text-white">
               CSS3
-            </span>
-          </div>
-          <div className="flex flex-col mb-5 items-center bg-cinzaMedio p-2 h-32 w-24 md:h-36 md:w-28 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
-            <span>
-              <Image
-                src={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg"
-                }
-                alt="Nodejs"
-                width={60}
-                height={60}
-              ></Image>
-            </span>
-            <span className="mb-auto text-white text-xl mt-5 md:mt-10">
-              Node.js
             </span>
           </div>
           <div className="flex flex-col mb-5 items-center bg-cinzaMedio p-2 h-32 w-24 md:h-36 md:w-28 mx-6 rounded-2xl transition-transform transform hover:scale-110 duration-500">
@@ -387,7 +376,7 @@ const Home = () => {
                 height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-white text-xl mt-5 md:mt-10">
+            <span className="mb-auto text-white text-xl mt-6 md:mt-10">
               Javascript
             </span>
           </div>
@@ -402,7 +391,7 @@ const Home = () => {
                 height={60}
               ></Image>
             </span>
-            <span className="mb-auto text-xl mt-5 md:mt-10 text-white">
+            <span className="mb-auto text-xl mt-6 md:mt-10 text-white">
               Bootstrap
             </span>
           </div>

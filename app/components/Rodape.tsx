@@ -6,6 +6,9 @@ import iconEmail from "../../public/email.png";
 import iconTelefone from "../../public/telefone.png";
 import Image from "next/image";
 import setaCima from "../../public/pra-cima.png";
+import linkedin from "../../public/linkedin.png";
+import email from "../../public/o-email.png";
+import gitHub from "../../public/github.png";
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -53,34 +56,27 @@ export default function Rodape() {
       </section>
 
       <section className="flex min-w-screen bg-cinzaClaro min-h-[5rem] justify-around">
-        <div className="text-white text-xl flex w-[40%] justify-around items-center flex-wrap">
-          <a
-            href="https://www.instagram.com/dev.marcosjr/?hl=pt"
-            target="_blank"
-            className="hover:scale-110 duration-500 ml-2"
-          >
-            Instagram
-          </a>
+        <div className="text-white text-xl flex w-[40%] justify-evenly items-center">
           <a
             href="https://www.linkedin.com/in/marcos-fernandes-8a4711175/"
             target="_blank"
-            className="hover:scale-110 duration-500 ml-2"
+            className="hover:scale-110 duration-500 ml-2 w-10"
           >
-            Linkedin
+            <Image src={linkedin} alt={"Linkedin"}></Image>
           </a>
           <a
             href="mailto:marcosdev@zohomail.com"
             target="_blank"
-            className="hover:scale-110 duration-500 ml-2"
+            className="hover:scale-110 duration-500 ml-2 w-10"
           >
-            E-mail
+            <Image src={email} alt={"Email"}></Image>
           </a>
           <a
             href="https://github.com/MarcosFernandes99"
             target="_blank"
-            className="hover:scale-110 duration-500 ml-2"
+            className="hover:scale-110 duration-500 ml-2 w-10"
           >
-            GitHub
+            <Image src={gitHub} alt="Github"></Image>
           </a>
         </div>
         <div className="flex items-center min-w-[40%] justify-end">

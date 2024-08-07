@@ -9,6 +9,11 @@ import wheatherApp from "../public/wheather_app.png";
 import todoApp from "../public/todo_app.png";
 import registroelogin from "../public/registroelogin.jpg";
 import "../app/globals.css";
+import seguroCondominio from "../public/casa-de-pedra (1).png";
+import seguroPet from "../public/casa-de-pedra (2).png";
+import seguroBike from "../public/casa-de-pedra (3).png";
+import seguroOdonto from "../public/casa-de-pedra (4).png";
+import seguroRespCivil from "../public/casa-de-pedra (5).png";
 
 const Project = () => {
   // const [data, setData] = useState<Projects[]>([]);
@@ -50,12 +55,122 @@ const Project = () => {
 
       <section className="min-w-screen min-h-screen bg-cinzaEscuro flex flex-col items-center">
         <div className="flex flex-col items-center justify-center mb-20">
-          <span className="text-white text-5xl mt-24 flex justify-center">
+          <span className="text-white text-5xl mt-24 flex justify-center font-extrabold">
             Portifólio
           </span>
           {/* <span className="text-cinzaClaro text-2xl mt-5 flex justify-center items-center">
             Escolhe a tecnologia utilizada no projeto:
           </span> */}
+        </div>
+
+        <div className="text-center mb-8">
+          <h3 className="text-4xl text-white">Casa de Pedra</h3>
+          <h4 className="text-lg text-cinzaClaro mt-2">
+            Projeto desenvolvido para uma seguradora, com aproximadamente 50
+            páginas, <p>abaixo segue algumas que ficaram incríveis!</p>
+          </h4>
+        </div>
+
+        <div
+          id="carouselExample"
+          className="carousel slide mb-20 p-12"
+          data-bs-ride="carousel"
+        >
+          <div className="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              className="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div className="carousel-inner">
+            <div className="carousel-item active" data-bs-interval="5000">
+              <Image
+                src={seguroCondominio}
+                alt=""
+                className="object-cover rounded-xl w-[70rem]"
+              ></Image>
+            </div>
+            <div className="carousel-item" data-bs-interval="5000">
+              <Image
+                src={seguroPet}
+                alt=""
+                className="object-cover rounded-xl w-[70rem]"
+              ></Image>
+            </div>
+            <div className="carousel-item" data-bs-interval="5000">
+              <Image
+                src={seguroBike}
+                alt=""
+                className="object-cover rounded-xl w-[70rem]"
+              ></Image>
+            </div>
+            <div className="carousel-item" data-bs-interval="5000">
+              <Image
+                src={seguroOdonto}
+                alt=""
+                className="object-cover rounded-xl w-[70rem]"
+              ></Image>
+            </div>
+            <div className="carousel-item" data-bs-interval="5000">
+              <Image
+                src={seguroRespCivil}
+                alt=""
+                className="object-cover rounded-xl w-[70rem]"
+              ></Image>
+            </div>
+          </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
 
         {/* <div className="flex justify-around mt-5 items-center w-[13.3rem] h-[3.3rem] bg-verde rounded-xl">
