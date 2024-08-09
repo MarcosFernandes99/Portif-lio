@@ -66,8 +66,15 @@ const Project = () => {
         <div className="text-center mb-8">
           <h3 className="text-4xl text-white">Casa de Pedra</h3>
           <h4 className="text-lg text-cinzaClaro mt-2 px-4">
-            Projeto desenvolvido para uma seguradora, com aproximadamente 50
-            páginas, <p>abaixo segue algumas que ficaram incríveis!</p>
+            Projeto desenvolvido junto a equipe da Black Beans.{" "}
+            <p>
+              Este projeto se resume a um site de uma seguradora, com
+              aproximadamente 50 páginas.
+            </p>
+            <p>
+              Abaixo segue algumas páginas desenvolvidas por mim que ficaram
+              incríveis!
+            </p>
           </h4>
         </div>
 
@@ -148,7 +155,7 @@ const Project = () => {
             </div>
           </div>
           <button
-            className="carousel-control-prev"
+            className="carousel-control-prev pr-20"
             type="button"
             data-bs-target="#carouselExample"
             data-bs-slide="prev"
@@ -160,7 +167,7 @@ const Project = () => {
             <span className="visually-hidden">Previous</span>
           </button>
           <button
-            className="carousel-control-next"
+            className="carousel-control-next pl-36"
             type="button"
             data-bs-target="#carouselExample"
             data-bs-slide="next"
