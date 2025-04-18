@@ -28,7 +28,7 @@ const scrollToBottom = () => {
 
 const downloadCV = () => {
   const cv =
-    "https://drive.google.com/file/d/1sHVhDXFfHmDF4_6YjhFsTjrtYspNU7mU/view?usp=sharing";
+    "https://drive.google.com/file/d/1Y-xHEeiXaR3pnbjdCfk7t5x3lnLRaa8a/view?usp=sharing";
   window.open(cv, "_blank");
 };
 
