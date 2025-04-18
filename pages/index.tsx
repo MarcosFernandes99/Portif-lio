@@ -109,10 +109,11 @@ const Home = () => {
           <span className="text-verde text-5xl">Marcos Fernandes</span>
           <span className="text-white text-5xl">Desenvolvedor Front End</span>
           <span className="text-cinzaMedio text-lg mt-12 text-justify">
-            Atuando há mais de 1 ano como freelancer, criando projetos que
-            extraia a identidade do cliente, de forma clara e objetiva.
-            Conhecedor e preparado para trabalhar com as tecnologias mais
-            utilizadas do mercado.
+            Estudante de Análise e Desenvolvimento de Sistemas. Experiência
+            profissional como freelance na criação de interfaces interativas.
+            Busco uma oportunidade como Desenvolvedor Júnior para aprofundar
+            meus conhecimentos na área e contribuir no que for preciso para o
+            crescimento da empresa.
           </span>
           <div className="flex mt-12 ml-auto mr-auto ">
             <button
@@ -274,11 +275,10 @@ const Home = () => {
             <span className="text-verde">minhas habilidades</span>
           </span>
           <span className="text-justify text-white mt-14">
-            Profissional com sólida experiência nas últimas tecnologias do
-            mercado. Me dedico não apenas na criação de sites intuitivos e
-            atrativos, mas também a um projeto personalizado, como por exemplo
-            um projeto completo que necessite de uma integração junto a um banco
-            de dados.
+            Profissional com experiência nas últimas tecnologias do mercado. Me
+            dedico não apenas na criação de sites intuitivos e atrativos, mas
+            também a um projeto personalizado, que o cliente se identifique e
+            fique 100% satisfeito!
           </span>
           <div className="flex">
             <button
