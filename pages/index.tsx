@@ -109,7 +109,7 @@ const Home = () => {
           <span className="text-verde text-5xl">Marcos Fernandes</span>
           <span className="text-white text-5xl">Desenvolvedor Front End</span>
           <span className="text-cinzaMedio text-lg mt-12 text-justify">
-            Estudante de Análise e Desenvolvimento de Sistemas. Experiência
+            Estudante de Análise e Desenvolvimento de Sistemas na FIAP. Experiência
             profissional como freelance na criação de interfaces interativas.
             Busco uma oportunidade como Desenvolvedor Júnior para aprofundar
             meus conhecimentos na área e contribuir no que for preciso para o
